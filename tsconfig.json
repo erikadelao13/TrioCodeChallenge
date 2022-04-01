@@ -12,7 +12,17 @@
     "isolatedModules": true,
     "jsx": "react-native",
     "module": "CommonJS",
+    "lib": ["es2017"],
     "strict": false,
     "resolveJsonModule": true,
-  }
+  },
+  "typeRoots": [
+    "node_modules/@types"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "env.d.ts",
+  ],
 }

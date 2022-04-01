@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, View, SafeAreaView } from 'react-native';
+import { MenuList } from '@components/MenuList';
 import { styles } from './Home.styles';
-import { MenuList } from '../../components/MenuList';
 import { THomeViewProps } from './Home.types';
 
 export const HomeView: React.FC<THomeViewProps> = ({ itemData }) => (

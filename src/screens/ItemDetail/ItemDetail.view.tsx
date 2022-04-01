@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image } from 'react-native';
-import { Typography } from '../../components/Typography';
-import { CurvedRectangle } from '../../components/CurvedRectangle';
+import { Typography } from '@components/Typography';
+import { CurvedRectangle } from '@components/CurvedRectangle';
 import { styles } from './ItemDetail.styles';
 import { TItemDetailProps } from './ItemDetail.types';
 

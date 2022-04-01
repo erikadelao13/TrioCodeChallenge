@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { getMenuItems } from '../../api/services';
-import { ErrorComponent } from '../../components/ErrorComponent';
-import { Loading } from '../../components/Loading';
+import { getMenuItems } from '@services/services';
+import { ErrorComponent } from '@components/ErrorComponent';
+import { Loading } from '@components/Loading';
 import { HomeView } from './Home.view';
 
 export const HomeScreen = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
-import { Typography } from '../Typography';
+import { Typography } from '@components/Typography';
 import { styles } from './MenuItem.styles';
 import { TMenuItemProps } from './MenuItem.types';
 

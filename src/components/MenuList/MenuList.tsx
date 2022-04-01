@@ -1,11 +1,11 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { APP_STACK_ROUTER } from '@constants/router.constants';
+import { Typography } from '@components/Typography';
+import { MenuItem } from '@components/MenuItem';
 import { styles } from './MenuList.styles';
-import { Typography } from '../../components/Typography';
-import { MenuItem } from '../../components/MenuItem';
 import { TMenuListItem } from './MenuList.types';
-import { APP_STACK_ROUTER } from '../../constants/router.constants';
 import { TMenuListItemNavigation } from './MenuList.types';
 
 export const MenuList: React.FC<TMenuListItem> = ({ menuItemData, categoryMenuTitle }) => {

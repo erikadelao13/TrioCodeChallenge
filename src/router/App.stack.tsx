@@ -1,10 +1,10 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { HomeScreen } from '../screens/Home/Home.screen';
-import { ItemDetailScreen } from '../screens/ItemDetail/ItemDetail.screen';
-import { moderateScale } from '../utils/scale';
-import { APP_STACK_ROUTER } from '../constants/router.constants';
-import { LogoImage } from '../components/LogoImage';
+import { LogoImage } from '@components/LogoImage';
+import { HomeScreen } from '@screens/Home';
+import { ItemDetailScreen } from '@screens/ItemDetail';
+import { moderateScale } from '@utils/scale';
+import { APP_STACK_ROUTER } from '@constants/router.constants';
 
 export type TAppStackParamsList = {
   [APP_STACK_ROUTER.HOME_SCREEN]: undefined;

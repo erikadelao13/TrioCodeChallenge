@@ -4,4 +4,5 @@ export type TMenuItemProps = {
   itemImage: string;
   itemName: string;
   firstElementStyle?: ViewStyle;
+  onPress: () => void;
 };

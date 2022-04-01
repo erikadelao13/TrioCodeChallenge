@@ -8,7 +8,12 @@ import { LogoImage } from '../components/LogoImage';
 
 export type TAppStackParamsList = {
   [APP_STACK_ROUTER.HOME_SCREEN]: undefined;
-  [APP_STACK_ROUTER.ITEMS_DETAIL_SCREEN]: undefined;
+  [APP_STACK_ROUTER.ITEMS_DETAIL_SCREEN]: {
+    description: string;
+    name: string;
+    url: string;
+    price: number;
+  };
 };
 
 const AppStack = createStackNavigator<TAppStackParamsList>();
@@ -28,6 +33,10 @@ export const AppStackRouter = () => (
       name={APP_STACK_ROUTER.HOME_SCREEN}
     />
     <AppStack.Screen
+      options={{
+        presentation: 'modal',
+        headerShown: false,
+      }}
       component={ItemDetailScreen}
       name={APP_STACK_ROUTER.ITEMS_DETAIL_SCREEN}
     />

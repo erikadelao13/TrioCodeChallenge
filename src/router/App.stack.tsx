@@ -28,7 +28,7 @@ export const AppStackRouter = () => (
     initialRouteName={APP_STACK_ROUTER.HOME_SCREEN}
   >
     <AppStack.Screen
-      options={{ headerTitle: () => <LogoImage /> }}
+      options={{ headerTitle: () => <LogoImage />, headerTitleAlign: 'center' }}
       component={HomeScreen}
       name={APP_STACK_ROUTER.HOME_SCREEN}
     />
